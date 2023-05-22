@@ -1,47 +1,40 @@
 {
   "schemaVersion": 1,
-  "id": "example_mod",
+  "id": "cobble-pp",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Cobble++",
+  "description": "Adds some 'nice-to-haves' to Cobblemon!",
   "authors": [
     "jadelily18"
   ],
   "contact": {
-    "homepage": "https://lilydev.com/",
-    "issues": "https://github.com/jadelily18/fabric-template-kotlin/issues",
-    "sources": "https://github.com/jadelily18/fabric-template-kotlin"
+    "homepage": "https://jadelily.dev",
+    "issues": "https://github.com/Lilydev-by-jade/Cobble-Plus-Plus/issues",
+    "sources": "https://github.com/Lilydev-by-jade/Cobble-Plus-Plus"
   },
 
-  "license": "LGPL-3.0",
-  "icon": "assets/example_mod/icon.png",
+  "license": "MIT",
+  "icon": "assets/cobble_pp/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.lilydev.example_mod.ExampleMod"
-      }
-    ],
-    "modmenu": [
-      {
-        "adapter": "kotlin",
-        "value": "com.lilydev.example_mod.integrations.ModMenuImpl"
+        "value": "com.lilydev.cobble_pp.CobblePlusPlus"
       }
     ]
   },
   "mixins": [
-    "example_mod.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
-    "minecraft": "~1.19",
+    "minecraft": "~1.19.2",
     "java": ">=17",
-    "fabric-language-kotlin": ">=1.8.5+kotlin.1.7.20"
+    "fabric-language-kotlin": "*"
   },
   "suggests": {
     "another-mod": "modmenu"
@@ -49,9 +42,12 @@
   "custom": {
     "modmenu": {
       "links": {
+        "Modrinth": "https://modrinth.com/user/jade",
         "modmenu.discord": "https://discord.gg/TZAt4PA5av",
-        "modmenu.kofi": "https://ko-fi.com/jadelily"
-      }
+        "Donate": "https://ko-fi.com/jadelily"
+      },
+      "badges": [ "library" ],
+      "update_checker": false
     }
   }
 }
