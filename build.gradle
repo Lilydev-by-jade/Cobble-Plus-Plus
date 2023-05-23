@@ -19,16 +19,8 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 
-	exclusiveContent {
-		forRepository {
-			maven {
-				name = "Modrinth"
-				url = "https://api.modrinth.com/maven"
-			}
-		}
-		filter {
-			includeGroup "maven.modrinth"
-		}
+	maven {
+		url = "https://maven.impactdev.net/repository/development"
 	}
 
 }
@@ -47,7 +39,7 @@ dependencies {
 
 	modImplementation "net.fabricmc:fabric-language-kotlin:${project.flk_version}"
 
-	modImplementation "maven.modrinth:cobblemon:${project.cobblemon_version_id}"
+	modImplementation "com.cobblemon:fabric:${project.cobblemon_version}"
 }
 
 processResources {

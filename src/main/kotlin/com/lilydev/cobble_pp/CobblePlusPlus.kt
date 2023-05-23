@@ -6,8 +6,8 @@ import org.slf4j.LoggerFactory
 
 object CobblePlusPlus : ModInitializer {
 
-    const val MOD_ID: String = "cobblelily"
-    const val MOD_NAME: String = "CobbleLily"
+    const val MOD_ID: String = "cobble-pp"
+    const val MOD_NAME: String = "Cobble++"
 
     @JvmField
     val LOGGER: Logger = LoggerFactory.getLogger(MOD_NAME)
